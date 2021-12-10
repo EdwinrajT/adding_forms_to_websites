@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(37, 52, 53);
+    margin:8rem;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    text-align: center;
+    color: seashell;
+}
+ul{
+    list-style: none;
+}
+form{
+    width: 30rem;
+    margin:3rem auto;
+    background-color: cornsilk;
+    padding: 1rem;
+    border-radius: 6px;
+}
+label{
+    margin-bottom: 8px;
+    display: block;
+    
+}
+input,textarea,select{
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+    font: inherit;
+    padding: 2px;   
+    border: 1px solid rgb(9, 67, 114);
+   box-sizing: border-box;  
+}
+input:focus,
+textarea:focus{
+   
+    background-color: rgb(155, 141, 192);
+   color: rgb(8, 27, 54);
+  
+}
+.control-alignment{
+    display: flex;
+}
+.control-alignment input{
+   
+  width: auto;
+  margin-right: 8px;
+}
+button{
+    display: block;
+    font: inherit;
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgb(17, 173, 245);
+}
+button:hover{
+    background-color: royalblue;
+    cursor: pointer;
+}
+#idaa{
+    
+    display: flex;
+    gap: 4px;
+    text-align: right;
+}

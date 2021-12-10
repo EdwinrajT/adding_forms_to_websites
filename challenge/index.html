@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&family=Roboto:wght@700&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<header>
+    <h1>Contact Form</h1>
+</header>
+<body>
+    <main>
+        <form action="/" method="GET">
+<section>
+    <h2>How can we help you?</h2>
+    <ul>
+        <li>
+            <label for="your-name">Your Name</label>
+            <input type="text" id="your-name" name="username" required/>
+        </li>
+
+        <li>
+            <label for="your-mail">Your E-Mail Addres</label>
+            <input type="email" id="your-mail" name="userMail"/>
+        </li>
+
+        <li>
+            <label for="your-number">Your Phone Number</label>
+            <input type="tel" id="your-number" name="userNumber"/>
+        </li>
+     <li>
+        <label for="your-message">Your Message</label>
+        <textarea id="your-message" name="userMessage" rows="7"> </textarea>
+     </li>
+            
+       
+        <li>
+            <label for="find">How did you find us?</label>
+            <select name="searchedName" id="find">
+                <option value="google">Google</option>
+                <option value="magazine">Magazine</option>
+                <option value="socialmedia">Facebook</option>
+            </select>
+           
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>How should we reply?</h2>
+    <ul>
+        <li class="inline-control">
+           
+            <input type="radio" id="callMe" name="replyPart" value="call"/>
+            <label for="callMe">Call me</label>
+        </li>
+
+        <li class="inline-control">
+          
+            <input type="radio" id="sendMail" name="replyPart" value="mail"/>
+            <label for="sendMail">Send me an email</label>
+        </li>
+
+        <li class="inline-control">
+           
+            <input type="radio" id="dont-reply" name="replyPart" value="noReply"/>
+            <label for="dont-reply">Don't reply</label>
+        </li>
+    </section>
+        <section>
+        <li class="inline-control">
+           
+            <input type="checkbox" id="agree-terms" name="terms" value="agreed"/>
+            <label for="agree-terms">Agree Terms</label>
+        </li>
+    </ul>
+</section>
+
+
+<section class="btnStyle">
+    <button type="reset" id="clear">Cancel</button>
+    <button type="submit">Submit</button>
+</section>
+        </form>
+    </main>
+</body>
+</html>

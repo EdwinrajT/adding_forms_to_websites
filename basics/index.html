@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ultra&display=swap" rel="stylesheet">
+    <title>HTML FORMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Demo Form</h1>
+    </header>
+    <main>
+    <form action="/" method="GET">
+        <section>
+            
+            <ul>
+                <h2>Personal details</h2>
+                <li>
+                    <label for="userName">Your name</label>
+                    <input type="text" name="user-name" id="userName"/>
+
+                    <label for="userEmail">Email</label>
+                    <input type="email" name="user-mail" id="userEmail"/>
+
+                    <label for="passCode">Password</label>
+                    <input type="password" name="user-password" id="passCode"/>
+                    
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>
+                <h2>More details</h2>
+                <li>
+                    <label for="phoneNumber">Phone</label>
+                    <input type="number" step="1" name="user-phonenumber" id="phoneNumber"/>
+                </li>
+                <li>
+                    <label for="age">Age-DOB</label>
+                    <input type="date" name="user-age" id="age"/>
+
+                 
+                        <label for="fav-color">What is your favourite color?</label>
+                        <select id="fav-color" name="favouritecolor">
+                        <option value="blue">Blue</option>
+                        <option value="white">White</option>
+                        <option value="pink">Pink</option>
+                        </select>
+                    </li> 
+                    <li>
+                    <label for="">Your mesage</label>
+                    <textarea name="" id="" cols="3" rows="3"></textarea>
+                </li>
+            </ul>
+        </section>
+   
+   
+ 
+  <section>
+      <ul>
+        <h2>How should we verify your account here?</h2>
+
+        <li class="control-alignment">
+            <input type="radio" name="verify" id="via-Text" value="sms" />
+            <label for="via-Text">Via Text(SMS)</label>
+        </li>
+        
+        <li class="control-alignment">
+            <input type="radio" name="verify" id="via-Call" value="call">
+            <label for="via-Call">Phone Call</label>
+        </li>
+        
+        <li class="control-alignment">
+            <input type="radio" name="verify" id="via-Email" value="mail">
+            <label for="via-Email">Via an Email</label>
+        </li>
+      </ul>
+  </section>
+
+  <section>
+      <ul>
+          <h2>How should we contact you?</h2>
+        <li class="control-alignment">
+            <input type="checkbox" name="userterms" id="agree-terms">
+            <label for="agree-terms">Agree terms & conditions?</label>
+        </li>
+        <li class="control-alignment">
+            <input type="checkbox" name="contact" id="contact-mail" value="mail">
+            <label for="contact-mail">Contact me via email</label>
+        </li>
+        <li class="control-alignment">
+            <input type="checkbox" name="contact" id="contact-phone" value="phone">
+            <label for="contact-phone">Contact me via phone</label>
+        </li>
+      </ul>
+  </section>
+
+<section> 
+            <button type="submit">Submit</button>    
+</section>
+
+    
+  
+</form>
+</main>
+</body>
+</html>
